@@ -1,19 +1,9 @@
-import { useState } from "react";
 import { Button, FormWrapper, InputField, TextArea } from "./styles";
 
-const ArticleForm = ({ onSubmit }) => {
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onSubmit({ title, content });
-    setTitle("");
-    setContent("");
-  };
+const ArticleForm = ({title , setTitle , content , setContent , onSubmit}) => {
 
   return (
-    <FormWrapper onSubmit={handleSubmit}>
+    <FormWrapper onSubmit={onSubmit}>
       <InputField
         type="text"
         placeholder="Título"

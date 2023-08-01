@@ -21,9 +21,9 @@ const startServer = async () => {
     console.error('No se ha podido iniciar la base de datos');
   }
 
-  app.listen(process.env.PORT, () =>
-    console.log('Servidor en ejecución en el puerto 3000')
-  );
+  app.listen(5000, () =>
+     console.log('Servidor en ejecución en el puerto 5000')
+);
 };
 
 // Uso de rutas
