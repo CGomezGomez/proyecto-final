@@ -46,4 +46,5 @@ controller.deleteArticle = async (req, res) => {
   }
 };
 
+
 module.exports = controller;

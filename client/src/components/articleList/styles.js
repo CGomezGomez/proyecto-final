@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const ArticleListWrapper = styled.div`
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
   max-width: 800px;
   margin: 0 auto;
+
 `;
 
 const ArticleItem = styled.div`
@@ -17,12 +17,15 @@ const ArticleItem = styled.div`
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
+  overflow-wrap: break-word;
+
 `;
 
 const ButtonX = styled.button`
+
   display: flex;
   position: absolute;
-  top: 0.5rem; 
+  top: 5%; 
   right: 0.5rem; 
   background-color:  #c3e6cb; 
   color: black;
@@ -32,6 +35,9 @@ const ButtonX = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
 `;
 
-export { ArticleListWrapper, ArticleItem, ButtonX };
+
+
+export { ArticleListWrapper, ArticleItem, ButtonX  };
