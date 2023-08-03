@@ -1,45 +1,24 @@
 import { useState } from 'react';
 import { GlobalStyles } from './styles/GlobalStyles';
-import Header from './components/header/Header';
-import ArticleForm from './components/articleForm/ArticleForm';
-import ArticleList from './components/articleList/ArticleList';
+import { ArticleContext } from './contexts/ArticleContext';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './router/Router';
 
 const App = () => {
   const [articles, setArticles] = useState([]);
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-
 
   return (
-    <>
-      <GlobalStyles />
-      <Header />
-      <ArticleForm onSubmit={(e)=> handleAddArticle (e, title, content , articles , setArticles , setTitle , setContent )} title = {title} setTitle = {setTitle}  content = {content}  setContent = {setContent} />
-      <ArticleList articles={articles} setArticles={setArticles}/>
-    </>
-  );
-};
 
-const handleAddArticle = (e, title, content , articles , setArticles , setTitle , setContent ) => {
-  e.preventDefault()
-  fetch('http://localhost:5000/api/articles', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({title , content}),
-  })
-    .then((response) => response.json())
-    .then((articleToAdd) => {
-      setArticles([...articles, articleToAdd]);
-      setTitle("");
-      setContent("")
-    })
-    .catch((error) => {
-      console.error('Error al agregar el artículo:', error);
-    });
+      <BrowserRouter>
 
+            <GlobalStyles />
+            <ArticleContext.Provider value={{articles , setArticles}}>
+                <Router />
+            </ArticleContext.Provider>
     
+      </BrowserRouter>
+   
+  );
 };
 
 export default App;

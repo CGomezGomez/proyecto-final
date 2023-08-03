@@ -1,7 +1,10 @@
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { ArticleItem, ArticleListWrapper, ButtonX } from "./styles";
+import { ArticleContext } from '../../contexts/ArticleContext';
 
-const ArticleList = ({ articles, setArticles }) => {
+const ArticleList = () => {
+
+  const {articles , setArticles} = useContext(ArticleContext);
 
   useEffect(() => {
     fetch('http://localhost:5000/api/articles')
