@@ -9,7 +9,7 @@ const HomePage = () => {
 
 	return (
 		<div>
-			<h2>¡Bienvenido a mi Blog Personal!</h2>
+			<h2>¡Bienvenido a mi Blog Personal!</h2>r
 			<ArticleForm
 				onSubmit={e =>
 					handleAddArticle(
