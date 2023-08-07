@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
   body{
     margin: 0;
     font-family: sans-serif;
-    background-image: url("../fondo.jpg");
+    /* background-image: url("../fondo.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

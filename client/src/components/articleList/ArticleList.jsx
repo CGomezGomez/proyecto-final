@@ -1,6 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { ArticleItem, ArticleListWrapper, ButtonX } from "./styles";
 import { ArticleContext } from '../../contexts/ArticleContext';
+import { Link } from 'react-router-dom';
 
 const ArticleList = () => {
 
@@ -26,14 +27,15 @@ const ArticleList = () => {
 
   return (
     <ArticleListWrapper>
-      {articles.map((article) => (
-        <ArticleItem key={article._id}>
+    {articles.map((article) => (
+      <ArticleItem key={article._id}>
+        <Link to={`/article/${article._id}`}> 
           <h2>{article.title}</h2>
-          <p>{article.content}</p>
-          <ButtonX onClick={() => handleDeleteArticle(article._id)}>X</ButtonX>
-        </ArticleItem>
-      ))}
-    </ArticleListWrapper>
+        </Link>
+        <ButtonX onClick={() => handleDeleteArticle(article._id)}>X</ButtonX>
+      </ArticleItem>
+    ))}
+  </ArticleListWrapper>
   );
 };
 
