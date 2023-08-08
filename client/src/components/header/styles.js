@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
-  background-color: #333;
-  color: #fff;
+  
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 3px solid black;
+ 
 
   h1 {
     font-size: 2rem;
     margin: 0;
+    
   }
 `;
 
@@ -20,7 +22,7 @@ const NavContainer = styled.nav`
 const ListNav = styled.ul`
   display: flex;
   list-style: none;
-  margin-right: 2rem;
+  margin-right: 1rem;
 `;
 
 const StyledLi = styled.li`
@@ -29,8 +31,6 @@ const StyledLi = styled.li`
 
   a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
     transition: color 0.3s ease;
 
     &:hover {

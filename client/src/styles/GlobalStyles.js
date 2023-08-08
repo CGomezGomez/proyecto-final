@@ -11,12 +11,11 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100%;
   }
   body{
-    margin: 0;
-    font-family: sans-serif;
-    /* background-image: url("../fondo.jpg"); */
+    margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 80%;
   }
   a{
     text-decoration: none;

@@ -1,9 +1,10 @@
-import { Button, FormWrapper, InputField, TextArea } from "./styles";
+import { Button, FormWrapper, InputField, StyledH1, TextArea } from "./styles";
 
 const ArticleForm = ({title , setTitle , content , setContent , onSubmit}) => {
 
   return (
     <FormWrapper onSubmit={onSubmit}>
+      <StyledH1>Crea tu artículo</StyledH1>
       <InputField
         type="text"
         placeholder="Título"

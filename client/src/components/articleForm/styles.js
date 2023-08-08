@@ -1,31 +1,38 @@
 import styled from "styled-components";
 
 const FormWrapper = styled.form`
-  background-color: #f8ded1;
+  background-color: black;
+  margin: auto;
   max-width: 50%;
-  margin: 0 auto;
   padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 3px solid #ccc;
+  border-radius: 4px ;
 `;
+const StyledH1 = styled.h1`
 
+  color: white;
+  font-size: 20px;
+
+`
 const InputField = styled.input`
-  background-color: #c3e6cb;
+  background-color: white;
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
+  border: 4px solid white;
   border-radius: 4px;
 `;
 
 const TextArea = styled.textarea`
-  background-color: #c3e6cb;
+ background-color: white;
   width: 100%;
-  height: 150px;
+  height: 250px; 
+  max-height: 300px; 
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  overflow-y: auto;
 `;
 
 const Button = styled.button`
@@ -41,4 +48,5 @@ const Button = styled.button`
   }
 `;
 
-export { FormWrapper, InputField, TextArea, Button };
+
+export { FormWrapper, InputField, TextArea, Button , StyledH1};

@@ -1,6 +1,8 @@
 import { useContext, useState } from 'react';
 import ArticleForm from '../../components/articleForm/ArticleForm';
 import { ArticleContext } from '../../contexts/ArticleContext';
+import { Footer, FooterText, StyledContainer, StyledDiv, StyledH2, StyledImg } from './styles';
+
 
 const HomePage = () => {
 	const [title, setTitle] = useState('');
@@ -8,26 +10,34 @@ const HomePage = () => {
 	const { articles, setArticles } = useContext(ArticleContext);
 
 	return (
-		<div>
-			<h2>¡Bienvenido a mi Blog Personal!</h2>
-			<ArticleForm
-				onSubmit={e =>
-					handleAddArticle(
-						e,
-						title,
-						content,
-						articles,
-						setArticles,
-						setTitle,
-						setContent
-					)
-				}
-				title={title}
-				setTitle={setTitle}
-				content={content}
-				setContent={setContent}
-			/>
-		</div>
+		<StyledContainer>
+			<StyledH2>¡Bienvenido a mi Blog Personal!</StyledH2>
+			<StyledDiv>
+			
+				<StyledImg src="blog.jpg" alt="" />
+				<ArticleForm
+					onSubmit={e =>
+						handleAddArticle(
+							e,
+							title,
+							content,
+							articles,
+							setArticles,
+							setTitle,
+							setContent
+						)
+					}
+					title={title}
+					setTitle={setTitle}
+					content={content}
+					setContent={setContent}
+				/>
+			</StyledDiv>
+			<Footer>
+        		<FooterText>Derechos de autor © 2023. Todos los derechos reservados.</FooterText>
+      		</Footer>
+
+		</StyledContainer>
 	);
 };
 
