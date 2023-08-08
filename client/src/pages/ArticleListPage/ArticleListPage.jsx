@@ -1,12 +1,17 @@
 import ArticleList from '../../components/articleList/ArticleList';
+import { StyledH2 , Footer , FooterText, StyledDiv } from './styles';
+
 
 const ArticleListPage = () => {
 	return (
 		
-		<div>
-			<h2>Sección de Artículos</h2>
+		<StyledDiv>
+			<StyledH2>Sección de Artículos</StyledH2>
 			<ArticleList />
-		</div>
+			<Footer>
+				<FooterText>Derechos de autor © 2023. Todos los derechos reservados.</FooterText>
+			</Footer>
+		</StyledDiv>
 		
 	);
 };

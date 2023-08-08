@@ -1,6 +1,7 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useContext } from 'react';
 import { ArticleContext } from '../../contexts/ArticleContext';
+import { ArticleContent, ArticleTitle, Container, EditLink } from './styles';
 
 const ArticleDetailPage = () => {
   const { id } = useParams();
@@ -13,11 +14,11 @@ const ArticleDetailPage = () => {
   }
 
   return (
-    <div>
-      <h2>{article.title}</h2>
-      <p>{article.content}</p>
-      <Link to={`/article/${id}/edit`}>Editar</Link> 
-    </div>
+    <Container>
+      <ArticleTitle>{article.title}</ArticleTitle>
+      <ArticleContent>{article.content}</ArticleContent>
+      <EditLink to={`/article/${id}/edit`}>Editar</EditLink>
+    </Container>
   );
 };
 

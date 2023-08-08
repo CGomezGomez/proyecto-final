@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
+const StyledDiv = styled.div`
 
-const StyledContainer = styled.section`
-    
 
-`;
+
+`
 
 const StyledH2 = styled.h2`
     
@@ -13,21 +13,6 @@ const StyledH2 = styled.h2`
     margin: 5rem 0;
 
 `;
-
-const StyledDiv = styled.div`
-
-    display: flex;
-
-`
-
-const StyledImg = styled.img`
-
-
-    height: 43.75rem;
-    width: 65%;
-    margin-right: 2rem;
-    filter: grayscale(100%);
-`
 
 const Footer = styled.footer`
   background-color: #333;
@@ -43,4 +28,6 @@ const Footer = styled.footer`
 const FooterText = styled.p`
   margin: 0;
 `;
-export {StyledContainer , StyledDiv , StyledImg , StyledH2 , Footer , FooterText}
+
+
+export {StyledDiv,  StyledH2 , Footer , FooterText}

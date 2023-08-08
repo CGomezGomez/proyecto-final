@@ -36,6 +36,7 @@ const ArticleList = () => {
       </ArticleItem>
     ))}
   </ArticleListWrapper>
+  
   );
 };
 
