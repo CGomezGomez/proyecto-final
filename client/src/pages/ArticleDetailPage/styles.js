@@ -24,7 +24,7 @@ const ArticleContent = styled.p`
 const EditLink = styled(Link)`
   margin-top: 20px;
   font-size: 16px;
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   right: 10%;
   
