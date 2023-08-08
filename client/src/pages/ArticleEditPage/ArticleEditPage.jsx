@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from 'react';
 import { ArticleContext } from '../../contexts/ArticleContext';
 import { useParams, useNavigate } from 'react-router-dom'; 
+import { StyledArticleDetail, StyledButton, StyledH2, StyledInput, StyledLoading, StyledTextarea } from './styles';
 
 export const ArticleEditPage = () => {
   const { articles, setArticles } = useContext(ArticleContext);
@@ -15,28 +16,30 @@ export const ArticleEditPage = () => {
   }, [id, articles]);
 
   return (
-    <div>
-      {editedArticle ? (
-        <div>
-          <h2>Editar Artículo</h2>
-          <label>Título:</label>
-          <input
-            type="text"
-            value={editedArticle.title}
-            onChange={ (e) => handleTitleChange(e, editedArticle, setEditedArticle)}
-          />
-          <label>Contenido:</label>
-          <textarea
-            value={editedArticle.content}
-            onChange= {(e) => handleContentChange(e, editedArticle, setEditedArticle)}
-          />
-          <button onClick={(e) => handleSaveEdit(articles, id, editedArticle, setArticles, navigate)}>Guardar Cambios</button>
-        </div>
-      ) : (
-        <p>Cargando...</p>
-      )}
-    </div>
-  );
+    <StyledArticleDetail>
+    {editedArticle ? (
+      <div>
+        <StyledH2>Editar Artículo</StyledH2>
+        <label>Título:</label>
+        <StyledInput
+          type="text"
+          value={editedArticle.title}
+          onChange={(e) => handleTitleChange(e, editedArticle, setEditedArticle)}
+        />
+        <label>Contenido:</label>
+        <StyledTextarea
+          value={editedArticle.content}
+          onChange={(e) => handleContentChange(e, editedArticle, setEditedArticle)}
+        />
+        <StyledButton onClick={(e) => handleSaveEdit(articles, id, editedArticle, setArticles, navigate)}>
+          Guardar Cambios
+        </StyledButton>
+      </div>
+    ) : (
+      <StyledLoading>Cargando...</StyledLoading>
+    )}
+  </StyledArticleDetail>
+);
 };
 
 
