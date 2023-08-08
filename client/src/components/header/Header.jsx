@@ -1,21 +1,21 @@
 import { Link } from 'react-router-dom'; 
-import { HeaderWrapper } from "./styles";
+import { HeaderWrapper, ListNav, NavContainer, StyledLi } from "./styles";
 
 export const Header = () => {
   return (
 
     <HeaderWrapper>
-          <h1>Blog Personal</h1>
-        <nav>
-          <ul>
-            <li>
+          <h1>Gomez</h1>
+        <NavContainer>
+          <ListNav>
+            <StyledLi>
               <Link to="/">Home</Link>
-            </li>
-            <li>
+            </StyledLi>
+            <StyledLi>
               <Link to="/articles">Artículos</Link>
-            </li>
-          </ul>
-        </nav>
+            </StyledLi>
+          </ListNav>
+        </NavContainer>
     </HeaderWrapper>
     
   );
