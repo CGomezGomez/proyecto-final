@@ -39,6 +39,4 @@ const ButtonX = styled.button`
 
 `;
 
-
-
 export { ArticleListWrapper, ArticleItem, ButtonX  };
