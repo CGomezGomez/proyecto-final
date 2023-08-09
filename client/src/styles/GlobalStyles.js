@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
   *::before{
     box-sizing: border-box;
   }
+  
   img{
 
     display: block;
@@ -25,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
    
   }
+
 /* 
   body::before {
     content: "";
