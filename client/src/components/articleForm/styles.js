@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 const FormWrapper = styled.form`
+
   background-color: black;
   margin: auto;
-  max-width: 50%;
+  max-width: 100%;
+  height: 800px;
   padding: 1rem;
   border: 3px solid #ccc;
   border-radius: 4px ;
+
 `;
+
 const StyledH1 = styled.h1`
 
   color: white;
@@ -15,27 +19,31 @@ const StyledH1 = styled.h1`
 
 `
 const InputField = styled.input`
-  background-color: white;
+
+  font-size: 18px;
+  padding: 8px;
   width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 4px solid white;
-  border-radius: 4px;
+  margin-bottom: 16px;
+
 `;
 
 const TextArea = styled.textarea`
- background-color: white;
+
+  background-color: white;
   width: 100%;
-  height: 250px; 
-  max-height: 300px; 
+  height: 75%; 
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  overflow-y: auto;
+  overflow: hidden;
+  font-size: 18px;
+  resize: none;
+  
 `;
 
 const Button = styled.button`
+
   background-color: #333;
   padding: 0.5rem 1rem;
   color: #fff;
@@ -46,6 +54,7 @@ const Button = styled.button`
   &:hover {
     background-color: #555;
   }
+  
 `;
 
 

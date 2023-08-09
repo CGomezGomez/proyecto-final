@@ -1,24 +1,38 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem  auto;
-  width: 60%;
+const CenteredContainer = styled.div`
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+
+  
+`;
+
+const Container = styled.div`
+
+  display: flex;
+  
+  align-items: center;
+  width: 60%;
+  border: 2px solid black; 
+  padding: 20px;
+  background-color: white;
 
 `;
 
 const ArticleTitle = styled.h2`
   font-size: 24px;
-  margin-bottom: 10px;
+  width: 60%;
 `;
 
 const ArticleContent = styled.p`
   font-size: 18px;
   text-align: center;
+  
 `;
 
 const EditLink = styled(Link)`
@@ -27,7 +41,13 @@ const EditLink = styled(Link)`
   position: fixed;
   bottom: 5%;
   right: 10%;
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
   
 `;
 
-export { Container, ArticleTitle, ArticleContent, EditLink };
+export { Container, ArticleTitle, ArticleContent, EditLink , CenteredContainer};

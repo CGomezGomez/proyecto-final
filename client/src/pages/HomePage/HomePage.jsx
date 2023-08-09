@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import ArticleForm from '../../components/articleForm/ArticleForm';
 import { ArticleContext } from '../../contexts/ArticleContext';
-import { Footer, FooterText, StyledContainer, StyledDiv, StyledH2, StyledImg } from './styles';
+import { Footer, FooterText, StyledContainer, StyledDiv, StyledH2} from './styles';
 
 
 const HomePage = () => {
@@ -14,7 +14,7 @@ const HomePage = () => {
 			<StyledH2>¡Bienvenido a mi Blog Personal!</StyledH2>
 			<StyledDiv>
 			
-				<StyledImg src="blog.jpg" alt="" />
+		
 				<ArticleForm
 					onSubmit={e =>
 						handleAddArticle(

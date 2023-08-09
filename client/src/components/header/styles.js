@@ -34,7 +34,7 @@ const StyledLi = styled.li`
     transition: color 0.3s ease;
 
     &:hover {
-      color: #f76c6c;
+      color: #555;
     }
   }
 `;

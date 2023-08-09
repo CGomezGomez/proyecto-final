@@ -20,15 +20,6 @@ const StyledDiv = styled.div`
 
 `
 
-const StyledImg = styled.img`
-
-
-    height: 43.75rem;
-    width: 65%;
-    margin-right: 2rem;
-    filter: grayscale(100%);
-`
-
 const Footer = styled.footer`
 
     background-color: #333;
@@ -44,4 +35,4 @@ const Footer = styled.footer`
 const FooterText = styled.p`
   margin: 0;
 `;
-export {StyledContainer , StyledDiv , StyledImg , StyledH2 , Footer , FooterText}
+export {StyledContainer , StyledDiv , StyledH2 , Footer , FooterText}

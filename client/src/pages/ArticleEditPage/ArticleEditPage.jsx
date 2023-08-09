@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from 'react';
 import { ArticleContext } from '../../contexts/ArticleContext';
 import { useParams, useNavigate } from 'react-router-dom'; 
-import { StyledArticleDetail, StyledButton, StyledH2, StyledInput, StyledLoading, StyledTextarea } from './styles';
+import { StyledArticleDetail, StyledButton, StyledH2, StyledInput, StyledLabel, StyledLoading, StyledTextarea } from './styles';
 
 export const ArticleEditPage = () => {
   const { articles, setArticles } = useContext(ArticleContext);
@@ -20,13 +20,13 @@ export const ArticleEditPage = () => {
     {editedArticle ? (
       <div>
         <StyledH2>Editar Artículo</StyledH2>
-        <label>Título:</label>
+        <StyledLabel>Título:</StyledLabel>
         <StyledInput
           type="text"
           value={editedArticle.title}
           onChange={(e) => handleTitleChange(e, editedArticle, setEditedArticle)}
         />
-        <label>Contenido:</label>
+        <StyledLabel>Contenido:</StyledLabel>
         <StyledTextarea
           value={editedArticle.content}
           onChange={(e) => handleContentChange(e, editedArticle, setEditedArticle)}

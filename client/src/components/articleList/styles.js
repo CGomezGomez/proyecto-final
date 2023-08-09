@@ -17,7 +17,8 @@ const ArticleItem = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow-wrap: break-word;
-  height: 200px; /* Altura fija de 200px */
+  height: 200px;
+
 `;
 
 const ButtonX = styled.button`
@@ -33,6 +34,7 @@ const ButtonX = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+ 
 `;
 
 export { ArticleListWrapper, ArticleItem, ButtonX };
