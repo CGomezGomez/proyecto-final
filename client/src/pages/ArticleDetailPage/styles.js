@@ -26,17 +26,21 @@ const Container = styled.div`
 `;
 
 const ArticleTitle = styled.h2`
+
   font-size: 24px;
   width: 60%;
+
 `;
 
 const ArticleContent = styled.p`
+
   font-size: 18px;
   text-align: center;
   
 `;
 
 const EditLink = styled(Link)`
+
   margin-top: 20px;
   font-size: 16px;
   position: fixed;
