@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'; 
-import { HeaderWrapper, ListNav, NavContainer, StyledLi } from "./styles";
+import { HeaderWrapper, ListNav, NavContainer, StyledLi , StyledImg , StyledContain } from "./styles";
 
 export const Header = () => {
   return (
 
     <HeaderWrapper>
+      <StyledContain>
           <h1>Gomez</h1>
+          <StyledImg src="/icon.png" alt="" />
+      </StyledContain>
         <NavContainer>
           <ListNav>
             <StyledLi>

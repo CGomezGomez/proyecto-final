@@ -15,18 +15,17 @@ const GlobalStyles = createGlobalStyle`
 
   body{
 
-    background-image: url("/articulos.jpg");
+    background-image: url("/fondo.png");
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   
     padding: 0 4rem;
     position: relative;
     min-height: 100vh;
    
   }
-
+/* 
   body::before {
     content: "";
     position: absolute;
@@ -37,7 +36,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: grey;
     z-index: -1;
     opacity: .8;
-  }
+  }  */
 
   a{
 

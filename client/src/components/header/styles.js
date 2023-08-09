@@ -17,7 +17,20 @@ const HeaderWrapper = styled.header`
 `;
 
 const NavContainer = styled.nav`
+
 `;
+
+const StyledContain = styled.div`
+ 
+ display: flex;
+ align-items: center;
+ gap: 10px;
+`
+
+const StyledImg = styled.img`
+
+  width:5%;
+`
 
 const ListNav = styled.ul`
   display: flex;
@@ -28,15 +41,16 @@ const ListNav = styled.ul`
 const StyledLi = styled.li`
 
   margin-right: 2rem;
+  font-size: 20px;
 
   a {
     text-decoration: none;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #555;
+      color: gray;
     }
   }
 `;
 
-export { HeaderWrapper, NavContainer, ListNav, StyledLi };
+export { HeaderWrapper, NavContainer, ListNav, StyledLi , StyledImg , StyledContain};

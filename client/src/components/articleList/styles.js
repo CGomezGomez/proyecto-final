@@ -6,10 +6,14 @@ const ArticleListWrapper = styled.div`
   grid-gap: 1rem;
   max-width: 800px;
   margin: 0 auto;
+  
 `;
 
 const ArticleItem = styled.div`
-  background-color: white;
+  background-image: url(/rrt2.jpg);
+  background-size: cover;
+
+  background-repeat: no-repeat;
   padding: 1rem;
   margin: 1rem;
   border-radius: 4px;

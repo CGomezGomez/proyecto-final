@@ -18,9 +18,10 @@ const Container = styled.div`
   
   align-items: center;
   width: 60%;
-  border: 2px solid black; 
+  border: 1px solid grey; 
   padding: 20px;
   background-color: white;
+
 
 `;
 
