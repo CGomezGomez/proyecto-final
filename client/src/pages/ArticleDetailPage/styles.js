@@ -3,25 +3,23 @@ import { Link } from 'react-router-dom';
 
 const CenteredContainer = styled.div`
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    flex-direction: column;
 
   
 `;
 
 const Container = styled.div`
 
-  display: flex;
-  
-  align-items: center;
-  width: 60%;
-  border: 1px solid grey; 
-  padding: 20px;
-  background-color: white;
-
+    display: flex;
+    align-items: center;
+    width: 60%;
+    border: 1px solid grey; 
+    padding: 20px;
+    background-color: white;
 
 `;
 
